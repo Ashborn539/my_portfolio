@@ -262,12 +262,33 @@ table.skills-table { width: 100%; border-collapse: collapse; font-size: .875rem;
 .skills-table tbody tr:last-child td { border-bottom: none; }
 .skills-table tbody tr:nth-child(even) { background: var(--stripe); }
 .skills-table td.cat { color: var(--ink-faint); font-family: var(--font-mono); font-size: .78rem; }
+.skills-legend {
+  display: flex; flex-direction: column; gap: 8px;
+  max-width: 46ch;
+}
+.skills-legend-title {
+  color: var(--ink-soft); font-size: .88rem;
+}
+.skills-legend-row {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.skills-legend-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: .78rem; color: var(--ink);
+}
+.skills-legend-sub {
+  color: var(--ink-faint); font-size: .78rem;
+  display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;
+}
+
 .level { display: inline-flex; align-items: center; gap: 5px; }
-.level .cell {
+.level .cell, .cell {
+  display: inline-block;
   width: 8px; height: 8px; border-radius: 1px;
   border: 1px solid var(--ink-faint);
+  vertical-align: middle;
 }
-.level .cell.on { background: var(--ink); border-color: var(--ink); }
+.level .cell.on, .cell.on { background: var(--ink); border-color: var(--ink); }
 .level.current .cell { display: none; }
 .level.current::before {
   content: 'en cours';
