@@ -206,6 +206,8 @@ main > section:last-of-type { border-bottom: none; }
 .btn-primary:hover { background: var(--mark); border-color: var(--mark); }
 .btn-secondary { background: transparent; color: var(--ink); }
 .btn-secondary:hover { border-color: var(--mark); color: var(--mark); }
+.btn-accent { background: var(--mark); color: var(--paper); border-color: var(--mark); }
+.btn-accent:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 
 /* Hero figure: abstract correlation sketch, not real data */
 .hero-figure {
@@ -244,14 +246,7 @@ main > section:last-of-type { border-bottom: none; }
 .stat-ledger { margin-top: 32px; }
 .stat-ledger .ledger-row .v { font-weight: 600; }
 
-.cv-link {
-  display: inline-flex; align-items: center; gap: 8px;
-  margin-top: 24px; font-family: var(--font-mono); font-size: .8rem;
-  text-decoration: none; color: var(--ink);
-  border: 1px solid var(--ink); border-radius: var(--radius);
-  padding: 10px 18px; transition: background .15s, color .15s;
-}
-.cv-link:hover { background: var(--ink); color: var(--paper); }
+.cv-link { margin-top: 24px; width: 100%; }
 
 /* ── Skills ── */
 .skills-table-wrap { overflow-x: auto; margin-bottom: 48px; border: 1px solid var(--line); border-radius: var(--radius); }
